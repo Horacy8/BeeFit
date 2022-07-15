@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { Box } from "@mui/system";
+import Banner from "../components/Banner";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Box>
+      <Banner />
+    </Box>
+  );
 };
 
 export default Home;
