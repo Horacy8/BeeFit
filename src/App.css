@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 .banner-img {
   position: absolute;
   right: 40px;
@@ -19,8 +23,26 @@
   border: 1px solid #9b560b !important;
 }
 
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 1200px) {
   .banner-img {
     display: none;
+  }
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 500px;
   }
 }
