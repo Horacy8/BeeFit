@@ -4,16 +4,24 @@ import { Stack, Box, Typography } from "@mui/material";
 const ExerciseVideos = ({ exerciseVideos, name }) => {
   return (
     <Box sx={{ mt: { lg: "200px", xs: "20px" } }} p="20px">
-      <Typography variant="h3" mb="33px">
+      <Typography
+        textAlign="center"
+        variant="h3"
+        mb="33px"
+        sx={{ fontSize: { lg: "48px", xs: "35px" } }}
+      >
         Watch{" "}
         <span style={{ color: "#9b560b", textTransform: "capitalize" }}>{name}</span>{" "}
         exercise videos
       </Typography>
       <Stack
-        justifyContent="flex-start"
+        justifyContent="center"
         flexWrap="wrap"
         alignItems="center"
-        sx={{ flexDirection: { lg: "row" }, gap: { lg: "110px", xs: "0" } }}
+        sx={{
+          flexDirection: { lg: "row", sm: "row" },
+          gap: { lg: "110px", sm: "80px", xs: "0" },
+        }}
       >
         {exerciseVideos?.slice(0, 4).map((item, index) => (
           <a

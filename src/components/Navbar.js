@@ -9,23 +9,21 @@ const Navbar = () => {
       direction="row"
       justifyContent="space-around"
       sx={{
-        gap: { sm: "122px", xs: "40px" },
+        gap: { sm: "40px", xs: "40px" },
         mt: { sm: "32px", xs: "20px" },
         justifyContent: "none",
       }}
       px="20px"
     >
       <Link to="/">
-        <img
-          src={Logo}
-          alt="logo"
-          style={{ width: "48px", height: "48px", margin: "0 20px" }}
-        />
+        <img className="logo-img" src={Logo} alt="logo" />
       </Link>
-      <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
+      <Stack direction="row" gap="40px" fontSize="24px" alignItems="center">
         <Link
           to="/"
           style={{
+            fontFamily: "Arial, sans-serif",
+            fontWeight: "bold",
             textDecoration: "none",
             color: "#3A1212",
             borderBottom: "3px solid #9B560B",
@@ -33,7 +31,15 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <a href="#exercises" style={{ textDecoration: "none", color: "#3A1212" }}>
+        <a
+          href="#exercises"
+          style={{
+            fontFamily: "Arial, sans-serif",
+            fontWeight: "bold",
+            textDecoration: "none",
+            color: "#3A1212",
+          }}
+        >
           Exercises
         </a>
       </Stack>

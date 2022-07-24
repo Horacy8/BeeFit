@@ -1,15 +1,12 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import Logo from "../assets/images/Logo.png";
 
 const Footer = () => {
   return (
-    <Box mt="80px" bgcolor="#fff3f4">
-      <Stack gap="40px" alignItems="center" px="40px" pt="24px">
+    <Box mt="80px" bgcolor="#ddd">
+      <Stack gap="40px" alignItems="center" px="40px" pt="24px" pb="24px">
         <img src={Logo} alt="logo" />
-        <Typography variant="h5" pb="40px" mt="20px">
-          BeeFit
-        </Typography>
       </Stack>
     </Box>
   );
